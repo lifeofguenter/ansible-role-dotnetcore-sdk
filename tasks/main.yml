@@ -25,6 +25,9 @@
   register: dotnetcore_current
   ignore_errors: yes
 
+- debug:
+    var: dotnetcore_current
+
 - include: install.yml
   when: dotnetcore_current.rc != 0 or not dotnetcore_current.stdout | search(dotnetcore_version_string_match)
 
