@@ -1,0 +1,21 @@
+---
+
+- name: reset dotnet target folder
+  file:
+    path: /opt/dotnet
+    state: absent
+  become: yes
+
+- name: create dotnet target folder
+  file:
+    path: /opt/dotnet
+    state: directory
+    mode: 0755
+  become: yes
+
+- name: download dotnet
+  unarchive:
+    src: "{{ dotnet_download_url }}"
+    dest: /opt/dotnet
+    remote_src: yes
+  become: yes

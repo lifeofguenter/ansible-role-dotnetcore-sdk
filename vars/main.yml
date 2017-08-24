@@ -1,0 +1,3 @@
+---
+
+dotnet_version_string_match: .NET Command Line Tools ({{ dotnet_version }})
