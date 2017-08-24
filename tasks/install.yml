@@ -15,7 +15,7 @@
 
 - name: download dotnet
   unarchive:
-    src: "{{ dotnet_download_url }}"
+    src: "{{ dotnetcore_download_url }}"
     dest: /opt/dotnet
     remote_src: yes
   become: yes

@@ -11,8 +11,8 @@ _None_
 ## Role Variables
 
 ```
-dotnet_version: 2.0.0
-dotnet_download_url: https://download.microsoft.com/download/1/B/4/1B4DE605-8378-47A5-B01B-2C79D6C55519/dotnet-sdk-2.0.0-linux-x64.tar.gz
+dotnetcore_version: 2.0.0
+dotnetcore_download_url: https://download.microsoft.com/download/1/B/4/1B4DE605-8378-47A5-B01B-2C79D6C55519/dotnet-sdk-2.0.0-linux-x64.tar.gz
 ```
 
 ## Dependencies
@@ -22,9 +22,9 @@ _None_
 ## Example Playbook
 
 ```
-- hosts: dotnet
+- hosts: dotnetcore
   roles:
-    - { role: lifeofguenter.dotnet-sdk }
+    - { role: lifeofguenter.dotnetcore-sdk }
 ```
 
 ## License

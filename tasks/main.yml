@@ -2,10 +2,10 @@
 
 - name: get dotnet version
   command: dotnet --info
-  register: dotnet_current
+  register: dotnetcore_current
   ignore_errors: yes
 
 - include: install.yml
-  when: dotnet_current.rc != 0 or not dotnet_current.stdout | search(dotnet_version_string_match)
+  when: dotnetcore_current.rc != 0 or not dotnetcore_current.stdout | search(dotnetcore_version_string_match)
 
 - include: configure.yml

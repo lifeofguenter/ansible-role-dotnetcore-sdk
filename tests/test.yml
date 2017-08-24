@@ -3,4 +3,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ansible-role-dotnet-sdk
+    - ansible-role-dotnetcore-sdk
