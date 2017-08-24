@@ -28,6 +28,9 @@
 - debug:
     var: dotnetcore_current
 
+- debug:
+    var: dotnetcore_version_string_match
+
 - include: install.yml
   when: dotnetcore_current.rc != 0 or not dotnetcore_current.stdout | search(dotnetcore_version_string_match)
 
