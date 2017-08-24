@@ -1,11 +1,23 @@
 ---
 
+# see: https://github.com/dotnet/core/blob/master/Documentation/prereqs.md
+# see: https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md
 - name: install apt packages
   apt:
-    name: libunwind8
+    name: "{{ item }}"
     state: present
     update_cache: yes
     cache_valid_time: 3600
+  with_items:
+    - libunwind8-dev
+    - gettext
+    - libicu-dev
+    - liblttng-ust-dev
+    - libcurl4-openssl-dev
+    - libssl-dev
+    - uuid-dev
+    - unzip
+    - zlib1g
   become: yes
 
 - name: get dotnet version
