@@ -1,5 +1,13 @@
 ---
 
+- name: install apt packages
+  apt:
+    name: libunwind8
+    state: present
+    update_cache: yes
+    cache_valid_time: 3600
+  become: yes
+
 - name: get dotnet version
   command: dotnet --info
   register: dotnetcore_current

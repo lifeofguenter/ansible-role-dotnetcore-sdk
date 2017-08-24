@@ -9,16 +9,15 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - trusty
-        - utopic
-        - vivid
-        - wily
         - xenial
+        - wily
+        - vivid
+        - utopic
+        - trusty
     - name: Debian
       versions:
         - stretch
         - jessie
-        - wheezy
   galaxy_tags:
     - system
     - development
