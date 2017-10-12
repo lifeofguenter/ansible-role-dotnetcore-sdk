@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/lifeofguenter/ansible-role-dotnetcore-sdk.svg?branch=master)](https://travis-ci.org/lifeofguenter/ansible-role-dotnetcore-sdk)
 
-# Ansible Role for .NET Core (SDK)
+# Ansible Role for .NET Core (SDK) on Ubuntu
 
-This ansible role will install .NET Core (SDK)
+This ansible role will install .NET Core (SDK) on Ubuntu.
 
 ## Requirements
 
@@ -10,10 +10,7 @@ _None_
 
 ## Role Variables
 
-```
-dotnetcore_version: 2.0.0
-dotnetcore_download_url: https://download.microsoft.com/download/1/B/4/1B4DE605-8378-47A5-B01B-2C79D6C55519/dotnet-sdk-2.0.0-linux-x64.tar.gz
-```
+_None_
 
 ## Dependencies
 
